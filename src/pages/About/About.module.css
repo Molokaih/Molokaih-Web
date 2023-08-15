@@ -1,0 +1,152 @@
+.about {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15vh;
+  overflow: hidden;
+}
+
+.profiles {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vw;
+  margin-top: 2vw;
+}
+
+.contentTitleAndBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2vw;
+}
+
+.title {
+  font-size: clamp(24px, 1.8vw, 1.8vw);
+  font-weight: 500;
+}
+
+.borderTitle {
+  width: 20vw;
+  height: 0.3vw;
+}
+
+.contentCardProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6vw;
+  width: 70vw;
+}
+
+.cardProfile {
+  width: clamp(150px, 15vw, 15vw);
+  gap: 0.5vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.cardProfile img {
+  border-radius: 50%;
+  width: clamp(100px, 15vw, 15vw);
+  height: clamp(100px, 15vw, 15vw);
+}
+
+.contentNameAndInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardProfile h3 {
+  color: #222;
+  text-align: center;
+  font-size: clamp(14px, 1.2vw, 1.2vw);
+  font-weight: 600;
+}
+
+.networks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  display: none;
+}
+
+.logoNetwork {
+  width: 25px;
+  height: 25px;
+  color: #296572;
+}
+
+.position {
+  color: #444;
+  text-align: center;
+  font-size: clamp(12px, 1vw, 1vw);
+  font-weight: 300;
+}
+
+.infoProfile {
+  color: #296572;
+  text-align: center;
+  font-size: clamp(13px, 1vw, 1vw);
+  font-weight: 500;
+  display: none;
+}
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  margin-top: 5vh;
+}
+
+.contentText p {
+  width: 60vw;
+  color: #296572;
+  text-align: center;
+  font-size: clamp(16px, 1.5vw, 1.5vw);
+  font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  .contentCardProfile {
+    gap: 3vh;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .contentText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-bottom: 10vh;
+  }
+
+  .contentText p {
+    width: 90vw;
+  }
+
+  .borderTitle {
+    width: 300px;
+    height: 4px;
+  }
+}

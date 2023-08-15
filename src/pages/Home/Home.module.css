@@ -1,0 +1,427 @@
+.home {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.contentPresentation {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 10% 0 8%;
+}
+
+.contentPresentation h1 {
+  font-size: clamp(30px, 3vw, 3vw);
+  text-align: start;
+  width: 100%;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.subtitle {
+  width: 100%;
+  font-size: clamp(16px, 1.5vw, 1.5vw);
+  font-weight: 500;
+  color: #296572;
+  line-height: 20px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttonContact {
+  color: #fff;
+  background-color: #25d9d9;
+  text-decoration: none;
+  border-radius: 50vw;
+  padding: 0.7vw 1.8vw;
+  font-size: clamp(16px, 1.2vw, 1.2vw);
+  position: relative;
+  transition: linear 0.3s;
+}
+
+.buttonContact:hover {
+  background-color: #25d9d9;
+  color: #fff;
+}
+
+.buttonSolutions {
+  text-decoration: none;
+  color: #296572;
+  font-size: clamp(16px, 1.2vw, 1.2vw);
+  font-weight: 500;
+}
+
+.contentSolutions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2vw;
+  align-items: center;
+  padding: 2vw 0;
+}
+
+.solutionCard {
+  width: clamp(75px, 7vw, 7vw);
+  height: clamp(75px, 6vw, 6vw);
+  padding: clamp(1rem, 1vw, 1vw);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 2vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: linear 0.3s;
+  cursor: pointer;
+  color: #222;
+  text-decoration: none;
+}
+
+.solutionCard p {
+  font-size: clamp(12px, 1vw, 1vw);
+  width: 100%;
+  text-align: start;
+}
+
+.logoCardSoluiton {
+  width: clamp(30px, 3vw, 3vw);
+  height: clamp(30px, 3vw, 3vw);
+}
+
+.solutionCard:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .contentSolutions:hover > .solutionCard:not(:hover) {
+  filter: blur(2px);
+} */
+
+.background {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+
+.backgroundLinear {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    270deg,
+    rgb(250, 250, 250, 0),
+    rgb(250, 250, 250, 1)
+  );
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------Solutions--------------- */
+
+.sectionServices {
+  width: 100%;
+  padding: 4vw 0;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+
+.contentTitleAndBorder {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+.title {
+  color: #000;
+  text-align: center;
+  font-size: clamp(24px, 1.8vw, 1.8vw);
+  font-weight: 500;
+  width: 80%;
+}
+
+.borderTitle {
+  width: 20vw;
+  height: 0.3vw;
+}
+
+.contentService {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+
+.contentService img {
+  width: clamp(100px, 20vw, 20vw);
+  height: clamp(100px, 20vw, 20vw);
+  flex-shrink: 0;
+  border-radius: 2vw;
+  object-fit: cover;
+}
+
+.titleService {
+  color: #222;
+  text-align: start;
+  font-size: clamp(18px, 1.8vw, 1.8vw);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.textService {
+  width: 30vw;
+  color: #296572;
+  font-size: clamp(16px, 1.5vw, 1.5vw);
+  font-weight: 300;
+}
+
+/* --------------Reviews---------------- */
+
+.sectionReviews {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  padding: 4vw 0;
+}
+
+.contentCards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3vw;
+  height: max-content;
+}
+
+.cardReview {
+  display: flex;
+  width: clamp(266px, 35vw, 35vw);
+  height: clamp(350px, 22vw, 22vw);
+  padding: 1vw 2vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  flex-shrink: 0;
+  border-radius: 1vw;
+  background: #fff;
+  box-shadow: 0px 20px 60px 0px rgba(6, 6, 6, 0.1);
+}
+
+.imageProfile {
+  width: clamp(70px, 6vw, 6vw);
+  height: clamp(70px, 6vw, 6vw);
+  flex-shrink: 0;
+  border-radius: 100vw;
+  object-fit: cover;
+  border: 3px solid #25d9d9;
+}
+
+.namePerson {
+  color: #000;
+  text-align: center;
+  font-size: clamp(18px, 1.2vw, 1.2vw);
+  font-weight: 500;
+}
+
+.booth {
+  color: #5d5d5d;
+  text-align: center;
+  font-size: clamp(12px, 1vw, 1vw);
+  font-weight: 300;
+}
+
+.textReview {
+  color: #296572;
+  text-align: center;
+  font-size: clamp(12px, 1vw, 1vw);
+  font-weight: 300;
+  min-height: 70px;
+  width: 90%;
+}
+
+.imageCompany {
+  width: 50px;
+}
+
+/* -------------Texts-------------- */
+
+.sectionText {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw 0;
+  gap: 5vw;
+}
+
+.sectionText img {
+  width: clamp(100px, 30vw, 30vw);
+  height: clamp(100px, 30vw, 30vw);
+  flex-shrink: 0;
+  border-radius: 2vw;
+  object-fit: cover;
+  box-shadow: 15px 15px 50px 0px rgba(0, 0, 0, 0.15);
+}
+
+.contentText {
+  width: 45vw;
+  text-align: start;
+}
+
+.contentTitleAndBorderTextSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 25px;
+}
+
+.contentText h2 {
+  color: #000;
+  font-size: clamp(24px, 2vw, 2vw);
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+
+.contentText {
+  color: #296572;
+  font-size: clamp(16px, 1.5vw, 1.5vw);
+  font-weight: 300;
+}
+
+@media (max-height: 450px) {
+  .hero {
+    height: 130vh;
+  }
+
+  .background {
+    width: 50%;
+    height: 120vh;
+    position: relative;
+  }
+}
+
+@media (max-width: 600px) {
+  .background {
+    display: none;
+  }
+  .contentPresentation {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .contentPresentation h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .subtitle {
+    width: 100%;
+  }
+
+  .contentSolutions {
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .solutionCard {
+    border-radius: 30px;
+  }
+
+  .buttons {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .buttonContact {
+    padding: 1vh 1.8vw;
+    font-size: clamp(16px, 1.2vw, 1.2vw);
+  }
+
+  /* ------------Solutions--------------- */
+
+  .sectionServices {
+    margin-top: 5vh;
+  }
+
+  .contentService {
+    margin-bottom: 40px;
+    gap: 0;
+  }
+
+  .contentService img {
+    display: none;
+  }
+
+  .textService {
+    width: 80vw;
+  }
+
+  .borderTitle {
+    width: 300px;
+    height: 4px;
+  }
+
+  /* --------------Reviews---------------- */
+
+  .contentCards {
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  /* .cardReview {
+    width: clamp(300px, 30vw, 30vw);
+    height: clamp(280px, 20vw, 20vw);
+  } */
+
+  /* -------------Texts-------------- */
+
+  .sectionText img {
+    display: none;
+  }
+
+  .sectionText {
+    margin-top: 40px;
+  }
+
+  .contentText {
+    width: 80vw;
+  }
+}

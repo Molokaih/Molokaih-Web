@@ -1,0 +1,103 @@
+.footer {
+  width: 90vw;
+  height: 20vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #222;
+  color: #959595;
+  padding: 0 5vw;
+  margin-top: 5vw;
+}
+
+.logo {
+  width: clamp(90px, 5vw, 5vw);
+  margin-left: -10px;
+}
+
+.contentTerms a {
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(12px, 1vw, 1vw);
+}
+
+.titleSection {
+  color: #fafafa;
+  font-size: clamp(16px, 1.5vw, 1.5vw);
+  font-weight: 600;
+}
+
+.contentLinksWeb {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentLinksWeb a {
+  color: #959595;
+  text-decoration: none;
+  font-size: clamp(14px, 1.2vw, 1.2vw);
+}
+
+.contentTextLeft p {
+  font-size: clamp(14px, 1.2vw, 1.2vw);
+}
+
+.networks {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.logoNetwork {
+  width: clamp(24px, 2vw, 2vw);
+  height: clamp(24px, 2vw, 2vw);
+  color: #959595;
+}
+
+.contentTextRigth {
+  display: flex;
+  gap: 6vw;
+  font-size: clamp(14px, 1.2vw, 1.2vw);
+}
+
+.contentTextBottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: clamp(12px, 1.2vw, 1.2vw);
+}
+
+@media (max-width: 600px) {
+  .footer {
+    height: max-content;
+    text-align: start;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 5vh 5vw;
+  }
+
+  .contentLinksWeb {
+    gap: 10px;
+  }
+
+  .contentTextLeft {
+    width: 100%;
+  }
+
+  .networks {
+    justify-content: center;
+  }
+
+  .contentTextRigth {
+    flex-direction: column;
+  }
+
+  .networks {
+    justify-content: flex-start;
+  }
+}
