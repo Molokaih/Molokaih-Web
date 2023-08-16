@@ -1,0 +1,146 @@
+.cardProfile {
+  width: clamp(150px, 15vw, 15vw);
+  gap: 0.5vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.imageProfile {
+  border-radius: 50%;
+  width: clamp(100px, 15vw, 15vw);
+  height: clamp(100px, 15vw, 15vw);
+}
+
+.contentNameAndInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.name {
+  color: #222;
+  text-align: center;
+  font-size: clamp(14px, 1.2vw, 1.2vw);
+  font-weight: 600;
+}
+
+.buttonDescription {
+  width: clamp(18px, 1.5vw, 1.5vw);
+  height: clamp(18px, 1.5vw, 1.5vw);
+  cursor: pointer;
+}
+
+.position {
+  color: #444;
+  text-align: center;
+  font-size: clamp(12px, 1vw, 1vw);
+  font-weight: 300;
+}
+
+.networks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  display: none;
+}
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contentInfo {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.buttonClose {
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+  width: clamp(25px, 3vw, 3vw);
+  height: clamp(25px, 3vw, 3vw);
+  cursor: pointer;
+  color: #222;
+}
+
+.contentImageAndNetwork {
+  width: 30vw;
+  height: 100%;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.contentImageAndNetwork img {
+  width: clamp(100px, 20vw, 20vw);
+  border-radius: 50%;
+}
+
+.logoNetwork {
+  width: clamp(25px, 3vw, 3vw);
+  height: clamp(25px, 3vw, 3vw);
+  color: #296572;
+}
+
+.contentNameAndDescription {
+  width: 50vw;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentNameAndDescription h3 {
+  font-size: clamp(24px, 2vw, 2vw);
+}
+
+.contentNameAndDescription p {
+  width: 80%;
+  font-size: clamp(16px, 1.2vw, 1.2vw);
+}
+
+@media (max-width: 600px) {
+  .contentInfo {
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+  }
+
+  .contentImageAndNetwork {
+    width: 100%;
+    height: 40%;
+  }
+  .contentNameAndDescription {
+    width: 100%;
+    height: 60%;
+  }
+
+  .buttonClose {
+    color: #fff;
+  }
+}

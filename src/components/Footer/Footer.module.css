@@ -1,6 +1,6 @@
 .footer {
   width: 90vw;
-  height: 20vw;
+  height: 40vh;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -39,6 +39,18 @@
   font-size: clamp(14px, 1.2vw, 1.2vw);
 }
 
+.logobank {
+  width: clamp(24px, 2vw, 2vw);
+  height: clamp(24px, 2vw, 2vw);
+}
+
+.contentLinksWeb p {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 1vw;
+}
+
 .contentTextLeft p {
   font-size: clamp(14px, 1.2vw, 1.2vw);
 }
@@ -72,9 +84,9 @@
   font-size: clamp(12px, 1.2vw, 1.2vw);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 734px) {
   .footer {
-    height: max-content;
+    height: 600px;
     text-align: start;
     justify-content: flex-start;
     gap: 30px;

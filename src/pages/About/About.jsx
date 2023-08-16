@@ -7,6 +7,7 @@ import MarioProfile from "../../assets/MarioProfile.jpg";
 import BrianProfile from "../../assets/BrianProfile.jpg";
 import { InstagramLogo, LinkedinLogo } from "phosphor-react";
 import { ArrowRight } from "phosphor-react";
+import CardProfile from "../../components/CardProfile/CardProfile";
 
 export default function About() {
   return (
@@ -30,157 +31,53 @@ export default function About() {
           </svg>
         </div>
         <div className={style.contentCardProfile}>
-          <div className={style.cardProfile}>
-            <img src={BrianProfile} alt="" />
-            <div className={style.contentNameAndInfo}>
-              <h3>Brian Niwoyda</h3>
-              <ArrowRight size="20" color="#25D9D9" />
-            </div>
-            <div className={style.networks}>
-              <a href="https://www.instagram.com/molokaih/" target="_blank">
-                <InstagramLogo className={style.logoNetwork} weight="fill" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/molokaih/"
-                target="_blank"
-              >
-                <LinkedinLogo className={style.logoNetwork} weight="fill" />
-              </a>
-            </div>
-            <p className={style.position}>Chief Executive Officer</p>
-            <p className={style.infoProfile}>
-              CEO & Fundador en Molokaih. Experto en software a medida y
-              metodologías ágiles. Formador en Silicon Missions. Amplia
-              experiencia en Account Management y Market Management. Master en
-              Gestión de Proyectos Tecnológicos.
-            </p>
-          </div>
-          <div className={style.cardProfile}>
-            <img src={MarioProfile} alt="" />
-
-            <div className={style.contentNameAndInfo}>
-              <h3>Mario Niwoyda</h3>
-              <ArrowRight size="20" color="#25D9D9" />
-            </div>
-            <div className={style.networks}>
-              <a href="https://www.instagram.com/molokaih/" target="_blank">
-                <InstagramLogo className={style.logoNetwork} weight="fill" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/molokaih/"
-                target="_blank"
-              >
-                <LinkedinLogo className={style.logoNetwork} weight="fill" />
-              </a>
-            </div>
-            <p className={style.position}>Chief Financial Officer</p>
-            <p className={style.infoProfile}>
-              CEO & Fundador en Molokaih. Experto en software a medida y
-              metodologías ágiles. Formador en Silicon Missions. Amplia
-              experiencia en Account Management y Market Management. Master en
-              Gestión de Proyectos Tecnológicos.
-            </p>
-          </div>
-          <div className={style.cardProfile}>
-            <img src={AndreaProfile} alt="" />
-            <div className={style.contentNameAndInfo}>
-              <h3>Andrea Otero Bay</h3>
-              <ArrowRight size="20" color="#25D9D9" />
-            </div>
-            <div className={style.networks}>
-              <a href="https://www.instagram.com/molokaih/" target="_blank">
-                <InstagramLogo className={style.logoNetwork} weight="fill" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/molokaih/"
-                target="_blank"
-              >
-                <LinkedinLogo className={style.logoNetwork} weight="fill" />
-              </a>
-            </div>
-            <p className={style.position}>IT Recruitment Manager</p>
-            <p className={style.infoProfile}>
-              CEO & Fundador en Molokaih. Experto en software a medida y
-              metodologías ágiles. Formador en Silicon Missions. Amplia
-              experiencia en Account Management y Market Management. Master en
-              Gestión de Proyectos Tecnológicos.
-            </p>
-          </div>
-          <div className={style.cardProfile}>
-            <img src={AndreaProfile} alt="" />
-            <div className={style.contentNameAndInfo}>
-              <h3>Andrea Otero Bay</h3>
-              <ArrowRight size="20" color="#25D9D9" />
-            </div>
-            <div className={style.networks}>
-              <a href="https://www.instagram.com/molokaih/" target="_blank">
-                <InstagramLogo className={style.logoNetwork} weight="fill" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/molokaih/"
-                target="_blank"
-              >
-                <LinkedinLogo className={style.logoNetwork} weight="fill" />
-              </a>
-            </div>
-            <p className={style.position}>IT Recruitment Manager</p>
-            <p className={style.infoProfile}>
-              CEO & Fundador en Molokaih. Experto en software a medida y
-              metodologías ágiles. Formador en Silicon Missions. Amplia
-              experiencia en Account Management y Market Management. Master en
-              Gestión de Proyectos Tecnológicos.
-            </p>
-          </div>
-          <div className={style.cardProfile}>
-            <img src={AndreaProfile} alt="" />
-            <div className={style.contentNameAndInfo}>
-              <h3>Andrea Otero Bay</h3>
-              <ArrowRight size="20" color="#25D9D9" />
-            </div>
-            <div className={style.networks}>
-              <a href="https://www.instagram.com/molokaih/" target="_blank">
-                <InstagramLogo className={style.logoNetwork} weight="fill" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/molokaih/"
-                target="_blank"
-              >
-                <LinkedinLogo className={style.logoNetwork} weight="fill" />
-              </a>
-            </div>
-            <p className={style.position}>IT Recruitment Manager</p>
-            <p className={style.infoProfile}>
-              CEO & Fundador en Molokaih. Experto en software a medida y
-              metodologías ágiles. Formador en Silicon Missions. Amplia
-              experiencia en Account Management y Market Management. Master en
-              Gestión de Proyectos Tecnológicos.
-            </p>
-          </div>
-          <div className={style.cardProfile}>
-            <img src={AndreaProfile} alt="" />
-            <div className={style.contentNameAndInfo}>
-              <h3>Andrea Otero Bay</h3>
-              <ArrowRight size="20" color="#25D9D9" />
-            </div>
-            <div className={style.networks}>
-              <a href="https://www.instagram.com/molokaih/" target="_blank">
-                <InstagramLogo className={style.logoNetwork} weight="fill" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/molokaih/"
-                target="_blank"
-              >
-                <LinkedinLogo className={style.logoNetwork} weight="fill" />
-              </a>
-            </div>
-            <p className={style.position}>IT Recruitment Manager</p>
-            <p className={style.infoProfile}>
-              CEO & Fundador en Molokaih. Experto en software a medida y
-              metodologías ágiles. Formador en Silicon Missions. Amplia
-              experiencia en Account Management y Market Management. Master en
-              Gestión de Proyectos Tecnológicos.
-            </p>
-          </div>
+          <CardProfile
+            name="Brian Niwoyda"
+            imageProfile={BrianProfile}
+            position="Chief Executive Officer"
+            description="EO & Fundador en Molokaih. Experto en software a medida y
+          metodologías ágiles. Formador en Silicon Missions. Amplia
+          experiencia en Account Management y Market Management. Master en
+          Gestión de Proyectos Tecnológicos."
+          />
+          <CardProfile
+            name="
+            Mario Niwoyda
+            "
+            imageProfile={MarioProfile}
+            position="Chief Financial Officer"
+            description="EO & Fundador en Molokaih. Experto en software a medida y
+          metodologías ágiles. Formador en Silicon Missions. Amplia
+          experiencia en Account Management y Market Management. Master en
+          Gestión de Proyectos Tecnológicos."
+          />
+          <CardProfile
+            name="Andrea Otero Bay"
+            imageProfile={AndreaProfile}
+            position="IT Recruitment Manager"
+            description="EO & Fundador en Molokaih. Experto en software a medida y
+          metodologías ágiles. Formador en Silicon Missions. Amplia
+          experiencia en Account Management y Market Management. Master en
+          Gestión de Proyectos Tecnológicos."
+          />
+          <CardProfile
+            name="Brian Niwoyda"
+            imageProfile={BrianProfile}
+            position="Chief Executive Officer"
+            description="EO & Fundador en Molokaih. Experto en software a medida y
+          metodologías ágiles. Formador en Silicon Missions. Amplia
+          experiencia en Account Management y Market Management. Master en
+          Gestión de Proyectos Tecnológicos."
+          />
+          <CardProfile
+            name="Brian Niwoyda"
+            imageProfile={BrianProfile}
+            position="Chief Executive Officer"
+            description="EO & Fundador en Molokaih. Experto en software a medida y
+          metodologías ágiles. Formador en Silicon Missions. Amplia
+          experiencia en Account Management y Market Management. Master en
+          Gestión de Proyectos Tecnológicos."
+          />
         </div>
       </section>
       <section className={style.contentText}>

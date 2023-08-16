@@ -1,7 +1,8 @@
 import React from "react";
 import style from "./Footer.module.css";
-import { InstagramLogo, LinkedinLogo } from "phosphor-react";
+import { InstagramLogo, LinkedinLogo, Bank } from "phosphor-react";
 import logoM from "../../assets/logoM.png";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -21,10 +22,17 @@ export default function Footer() {
 
       <div className={style.contentTextRigth}>
         <div className={style.contentLinksWeb}>
+          <h3 className={style.titleSection}>Payment methods</h3>
+          <p>
+            <Bank className={style.logobank} />
+            Bank transfer
+          </p>
+        </div>
+        <div className={style.contentLinksWeb}>
           <h3 className={style.titleSection}>Useful links</h3>
-          <a href="">Home</a>
-          <a href="">About us</a>
-          <a href="">What we do</a>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About us</NavLink>
+          <NavLink to="/wedo">What we do</NavLink>
         </div>
 
         <div>

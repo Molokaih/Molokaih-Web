@@ -11,6 +11,7 @@ import SamulProfile from "../../assets/SamulProfile.jpeg";
 import servicesUXUI from "../../assets/servicesUXUI.jpg";
 import Footer from "../../components/Footer/Footer";
 import { NavLink } from "react-router-dom";
+import CardReview from "../../components/CardReview/CardReview";
 
 export default function Home() {
   return (
@@ -136,40 +137,24 @@ export default function Home() {
           </svg>
         </div>
         <div className={style.contentCards}>
-          <div className={style.cardReview}>
-            <img
-              src={DanelProfile}
-              alt="Profile"
-              className={style.imageProfile}
-            />
-            <p className={style.textReview}>
-              Molokaih has been a true partner for Smart Cap, collaborating in
-              the materialization of a truly differentiated digital platform
-              that has completely revolutionized our student experience.
-            </p>
-            <div>
-              <h3 className={style.namePerson}>Danel Manzanares</h3>
-              <p className={style.booth}>Founder of Smart Cap Academy</p>
-            </div>
-            <img src={logoSCA} alt="logoSCA" className={style.imageCompany} />
-          </div>
-          <div className={style.cardReview}>
-            <img
-              src={SamulProfile}
-              alt="prifile"
-              className={style.imageProfile}
-            />
-            <p className={style.textReview}>
-              We chose Molokaih because of their unmatched passion in our team.
-              Their focus goes beyond software development, they seek to truly
-              revolutionize our industry.
-            </p>
-            <div>
-              <h3 className={style.namePerson}>Samuel Zdanovich</h3>
-              <p className={style.booth}>Founder of ZDA motors</p>
-            </div>
-            <img src={logoZDA} alt="logoZDA" className={style.imageCompany} />
-          </div>
+          <CardReview
+            textReview=" Molokaih has been a true partner for Smart Cap, collaborating in
+          the materialization of a truly differentiated digital platform
+          that has completely revolutionized our student experience."
+            imageProfile={DanelProfile}
+            nameUser="Danel Manzanares"
+            position="Founder of Smart Cap Academy"
+            logo={logoSCA}
+          />
+          <CardReview
+            textReview=" We chose Molokaih because of their unmatched passion in our team.
+            Their focus goes beyond software development, they seek to truly
+            revolutionize our industry."
+            imageProfile={SamulProfile}
+            nameUser="Samuel Zdanovich"
+            position="Founder of ZDA motors"
+            logo={logoZDA}
+          />
         </div>
       </section>
       <section className={style.sectionText}>

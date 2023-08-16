@@ -1,0 +1,50 @@
+.cardReview {
+  display: flex;
+  width: clamp(266px, 35vw, 35vw);
+  height: clamp(350px, 22vw, 22vw);
+  padding: 1vw 2vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  flex-shrink: 0;
+  border-radius: 1vw;
+  background: #fff;
+  box-shadow: 0px 20px 60px 0px rgba(6, 6, 6, 0.1);
+}
+
+.imageProfile {
+  width: clamp(70px, 6vw, 6vw);
+  height: clamp(70px, 6vw, 6vw);
+  flex-shrink: 0;
+  border-radius: 100vw;
+  object-fit: cover;
+  border: 3px solid #25d9d9;
+}
+
+.namePerson {
+  color: #000;
+  text-align: center;
+  font-size: clamp(18px, 1.2vw, 1.2vw);
+  font-weight: 500;
+}
+
+.booth {
+  color: #5d5d5d;
+  text-align: center;
+  font-size: clamp(12px, 1vw, 1vw);
+  font-weight: 300;
+}
+
+.textReview {
+  color: #296572;
+  text-align: center;
+  font-size: clamp(12px, 1vw, 1vw);
+  font-weight: 300;
+  min-height: 70px;
+  width: 90%;
+}
+
+.imageCompany {
+  width: clamp(34px, 4vw, 4vw);
+}

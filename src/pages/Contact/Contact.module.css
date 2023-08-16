@@ -140,6 +140,10 @@
   font-size: clamp(14px, 1vw, 1vw);
 }
 
+.form button:disabled {
+  background: #8ae6e6;
+}
+
 @media (max-width: 770px) {
   .sectionContact {
     margin-top: 50px;

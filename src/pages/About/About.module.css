@@ -47,67 +47,6 @@
   width: 70vw;
 }
 
-.cardProfile {
-  width: clamp(150px, 15vw, 15vw);
-  gap: 0.5vw;
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-}
-
-.cardProfile img {
-  border-radius: 50%;
-  width: clamp(100px, 15vw, 15vw);
-  height: clamp(100px, 15vw, 15vw);
-}
-
-.contentNameAndInfo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.cardProfile h3 {
-  color: #222;
-  text-align: center;
-  font-size: clamp(14px, 1.2vw, 1.2vw);
-  font-weight: 600;
-}
-
-.networks {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw;
-  display: none;
-}
-
-.logoNetwork {
-  width: 25px;
-  height: 25px;
-  color: #296572;
-}
-
-.position {
-  color: #444;
-  text-align: center;
-  font-size: clamp(12px, 1vw, 1vw);
-  font-weight: 300;
-}
-
-.infoProfile {
-  color: #296572;
-  text-align: center;
-  font-size: clamp(13px, 1vw, 1vw);
-  font-weight: 500;
-  display: none;
-}
-
 .contentText {
   display: flex;
   flex-direction: column;
