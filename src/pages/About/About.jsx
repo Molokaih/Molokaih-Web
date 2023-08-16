@@ -2,12 +2,11 @@ import React from "react";
 import style from "./About.module.css";
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
-import AndreaProfile from "../../assets/AndreaProfile.jpg";
-import MarioProfile from "../../assets/MarioProfile.jpg";
-import BrianProfile from "../../assets/BrianProfile.jpg";
-import { InstagramLogo, LinkedinLogo } from "phosphor-react";
-import { ArrowRight } from "phosphor-react";
 import CardProfile from "../../components/CardProfile/CardProfile";
+
+import AndreaProfile from "../../assets/teamProfiles/AndreaProfile.avif";
+import MarioProfile from "../../assets/teamProfiles/MarioProfile.avif";
+import BrianProfile from "../../assets/teamProfiles/BrianProfile.avif";
 
 export default function About() {
   return (

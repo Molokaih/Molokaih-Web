@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Footer.module.css";
+import logoM from "../../assets/logoM.avif";
 import { InstagramLogo, LinkedinLogo, Bank } from "phosphor-react";
-import logoM from "../../assets/logoM.png";
 import { NavLink } from "react-router-dom";
 
 export default function Footer() {

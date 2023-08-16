@@ -2,13 +2,16 @@ import Nav from "../../components/Nav/Nav";
 import style from "./Home.module.css";
 import bgHome from "../../assets/backgroundHome.avif";
 import { PenNib, Browser, DeviceMobile } from "@phosphor-icons/react";
-import serviceMobile from "../../assets/serviceMobile.jpg";
-import serviceWeb from "../../assets/serviceWeb.jpg";
-import logoSCA from "../../assets/logoSCA.png";
-import logoZDA from "../../assets/logoZDA.png";
-import DanelProfile from "../../assets/DanelProfile.jpeg";
-import SamulProfile from "../../assets/SamulProfile.jpeg";
-import servicesUXUI from "../../assets/servicesUXUI.jpg";
+
+import serviceMobile from "../../assets/serviceMobile.avif";
+import serviceWeb from "../../assets/serviceWeb.avif";
+import servicesUXUI from "../../assets/servicesUXUI.avif";
+
+import logoSCA from "../../assets/reviws/logoSCA.avif";
+import logoZDA from "../../assets/reviws/logoZDA.avif";
+import DanelProfile from "../../assets/reviws/DanelProfile.avif";
+import SamulProfile from "../../assets/reviws/SamulProfile.avif";
+
 import Footer from "../../components/Footer/Footer";
 import { NavLink } from "react-router-dom";
 import CardReview from "../../components/CardReview/CardReview";

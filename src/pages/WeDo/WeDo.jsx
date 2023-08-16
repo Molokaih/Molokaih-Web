@@ -1,14 +1,15 @@
 import React from "react";
 import style from "./WeDo.module.css";
 import Nav from "../../components/Nav/Nav";
-import arrow from "../../assets/arrow.svg";
-import figma from "../../assets/figma.svg";
-import react from "../../assets/react.svg";
-import nodejs from "../../assets/nodejs.svg";
-import flutter from "../../assets/flutter.svg";
-import github from "../../assets/github.svg";
-import postgres from "../../assets/postgresql.svg";
 import Footer from "../../components/Footer/Footer";
+
+import arrow from "../../assets/weDo/arrow.svg";
+import figma from "../../assets/weDo/figma.svg";
+import react from "../../assets/weDo/react.svg";
+import nodejs from "../../assets/weDo/nodejs.svg";
+import flutter from "../../assets/weDo/flutter.svg";
+import github from "../../assets/weDo/github.svg";
+import postgres from "../../assets/weDo/postgresql.svg";
 
 export default function WeDo() {
   return (

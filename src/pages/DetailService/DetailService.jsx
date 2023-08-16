@@ -8,9 +8,10 @@ import {
   Magnet,
   ChartLineUp,
 } from "phosphor-react";
-import web from "../../assets/serviceWeb.jpg";
-import ux from "../../assets/servicesUXUI.jpg";
-import mobile from "../../assets/serviceMobile.jpg";
+
+import web from "../../assets/serviceWeb.avif";
+import ux from "../../assets/servicesUXUI.avif";
+import mobile from "../../assets/serviceMobile.avif";
 
 export default function DetailService() {
   const { position } = useParams();
