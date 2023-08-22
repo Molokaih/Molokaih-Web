@@ -25,7 +25,7 @@
 .name {
   color: #222;
   text-align: center;
-  font-size: clamp(14px, 1.2vw, 1.2vw);
+  font-size: clamp(12px, 1.2vw, 1.2vw);
   font-weight: 600;
 }
 
@@ -95,7 +95,7 @@
 }
 
 .contentImageAndNetwork img {
-  width: clamp(100px, 20vw, 20vw);
+  width: clamp(130px, 20vw, 20vw);
   border-radius: 50%;
 }
 

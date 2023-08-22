@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import style from "./Contact.module.css";
 import {
   MapPin,
@@ -9,6 +9,7 @@ import {
 } from "phosphor-react";
 import Footer from "../../components/Footer/Footer";
 import Nav from "../../components/Nav/Nav";
+import useValidateForm from "../../hooks/useValidateForm";
 
 export default function Contact() {
   const [dataEmail, setDataEamil] = useState({
@@ -18,66 +19,15 @@ export default function Contact() {
     _subject: "",
     mesage: "",
   });
-  const [errors, setErrors] = useState({
-    exist: true,
-    name: "",
-    email: "",
-    phone: "",
-    _subject: "",
-    mesage: "",
-  });
-  const inputName = useRef(true);
-  const inputEmail = useRef(true);
-  const inputPhone = useRef(true);
-  const inputSubject = useRef(true);
-  const inputMesage = useRef(true);
+
+  const { validate, errors } = useValidateForm();
 
   function changueData(e) {
     e.preventDefault();
     setDataEamil({ ...dataEmail, [e.target.name]: e.target.value });
-    setErrors(validate({ ...dataEmail, [e.target.name]: e.target.value }));
+    validate({ ...dataEmail, [e.target.name]: e.target.value });
   }
 
-  function validate(data) {
-    let errors = {};
-
-    const { name, email, phone, _subject, mesage } = data;
-    if (inputName.current) {
-      errors.exist = true;
-      inputName.current = name === "";
-    } else if (!name) {
-      errors.name = true;
-    }
-
-    if (inputEmail.current) {
-      errors.exist = true;
-      inputEmail.current = email === "";
-    } else if (!email) {
-      errors.email = true;
-    }
-
-    if (inputPhone.current) {
-      errors.exist = true;
-      inputPhone.current = phone === "";
-    } else if (!phone) {
-      errors.phone = true;
-    }
-
-    if (inputSubject.current) {
-      errors.exist = true;
-      inputSubject.current = _subject === "";
-    } else if (!_subject) {
-      errors._subject = true;
-    }
-    if (inputMesage.current) {
-      errors.exist = true;
-      inputMesage.current = mesage === "";
-    } else if (!mesage) {
-      errors.mesage = true;
-    }
-
-    return { ...errors, exist: Object.keys(errors).length > 0 };
-  }
   return (
     <main className={style.contact}>
       <Nav />
@@ -125,7 +75,10 @@ export default function Contact() {
             placeholder="Name"
             value={dataEmail.name}
             onChange={(e) => changueData(e)}
-            style={{ border: errors.name ? "1px solid red" : "none" }}
+            style={{
+              border: errors.name ? "1px solid red" : "none",
+              outline: errors.name ? "none" : "",
+            }}
           />
           <input
             type="email"
@@ -133,7 +86,10 @@ export default function Contact() {
             placeholder="E-mail"
             value={dataEmail.email}
             onChange={(e) => changueData(e)}
-            style={{ border: errors.email ? "1px solid red" : "none" }}
+            style={{
+              border: errors.email ? "1px solid red" : "none",
+              outline: errors.email ? "none" : "",
+            }}
           />
           <input
             type="text"
@@ -141,7 +97,10 @@ export default function Contact() {
             placeholder="Phone"
             value={dataEmail.phone}
             onChange={(e) => changueData(e)}
-            style={{ border: errors.phone ? "1px solid red" : "none" }}
+            style={{
+              border: errors.phone ? "1px solid red" : "none",
+              outline: errors.phone ? "none" : "",
+            }}
           />
           <input
             type="text"
@@ -149,7 +108,10 @@ export default function Contact() {
             placeholder="Subject"
             value={dataEmail._subject}
             onChange={(e) => changueData(e)}
-            style={{ border: errors._subject ? "1px solid red" : "none" }}
+            style={{
+              border: errors._subject ? "1px solid red" : "none",
+              outline: errors._subject ? "none" : "",
+            }}
           />
           <textarea
             id=""
@@ -159,7 +121,10 @@ export default function Contact() {
             name="mesage"
             value={dataEmail.mesage}
             onChange={(e) => changueData(e)}
-            style={{ border: errors.mesage ? "1px solid red" : "none" }}
+            style={{
+              border: errors.mesage ? "1px solid red" : "none",
+              outline: errors.mesage ? "none" : "",
+            }}
           ></textarea>
           <input
             type="hidden"
