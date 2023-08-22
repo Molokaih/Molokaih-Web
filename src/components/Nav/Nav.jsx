@@ -18,7 +18,7 @@ export default function Nav() {
       <NavLink to="/">
         <img
           src={logo}
-          alt=""
+          alt="logo Molokaih"
           className={style.logo}
           style={{ position: menu ? "fixed" : "relative" }}
         />

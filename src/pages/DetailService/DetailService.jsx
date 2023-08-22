@@ -17,21 +17,21 @@ export default function DetailService() {
   const { position } = useParams();
   const dataServices = [
     {
-      title: "Desarrollo Web",
+      title: "Web development",
       content:
-        "Nos esforzamos por que nuestros productos sean correctos, fáciles de usar, seguros, eficientes, flexibles, mantenibles, escalables y robustos.",
+        "We forge perfection into every line of code, fusing innovation and functionality to create websites that not only are visually captivating, but also, but also drive performance, scalability and ease of maintenance.",
       image: web,
     },
     {
-      title: "Diseño UX/UI",
+      title: "UX/UI design",
       content:
-        "Nos esforzamos por que nuestros productos sean correctos, fáciles de usar, seguros, eficientes, flexibles, mantenibles, escalables y robustos.",
+        "We guide every design to the detail for an exceptional experience: fusing impeccable functionality with captivating esthetics, for a user journey that transcends the ordinary.",
       image: ux,
     },
     {
-      title: "Desarrollo Mobile",
+      title: "Mobile development",
       content:
-        "Nos esforzamos por que nuestros productos sean correctos, fáciles de usar, seguros, eficientes, flexibles, mantenibles, escalables y robustos.",
+        "We build exceptional mobile experiences, where every pulse of code translates into applications that dazzle aesthetically, operate effortlessly and expand with agility, providing an unparalleled journey in the digital world.",
       image: mobile,
     },
   ];
@@ -44,13 +44,13 @@ export default function DetailService() {
           <h1>{dataServices[position].title}</h1>
           <p>{dataServices[position].content}</p>
           <NavLink className={style.button} to="/contact">
-            Obtener
+            Obtain
           </NavLink>
         </div>
       </section>
       <section className={style.sectionBenefits}>
         <div className={style.contentTitleAndBorder}>
-          <h2 className={style.title}>Beneficios</h2>
+          <h2 className={style.title}>Benefits</h2>
           <svg
             className={style.borderTitle}
             viewBox="0 0 81 5"
@@ -65,22 +65,22 @@ export default function DetailService() {
         </div>
         <div className={style.benefit}>
           <Star color="#25D9D9" className={style.logoBenefits} />
-          <p>Experiencia satisfactoria del usuario.</p>
+          <p>Satisfactory user experience.</p>
         </div>
         <div className={style.benefit}>
           <CurrencyCircleDollar
             color="#25D9D9"
             className={style.logoBenefits}
           />
-          <p>Menos costos de soporte.</p>
+          <p>Lower support costs.</p>
         </div>
         <div className={style.benefit}>
           <Magnet color="#25D9D9" className={style.logoBenefits} />
-          <p>Mayor retención de clientes.</p>
+          <p>Increased customer retention.</p>
         </div>
         <div className={style.benefit}>
           <ChartLineUp color="#25D9D9" className={style.logoBenefits} />
-          <p>Impulso en la conversión y ventas.</p>
+          <p>Boost in conversion and sales.</p>
         </div>
       </section>
     </header>

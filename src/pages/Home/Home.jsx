@@ -23,9 +23,9 @@ export default function Home() {
       <main className={style.hero}>
         <section className={style.contentPresentation}>
           <h1>Software development</h1>
-          <h6 className={style.subtitle}>
+          <h2 className={style.subtitle}>
             Connect with our innovative solutions
-          </h6>
+          </h2>
           <div className={style.contentSolutions}>
             <NavLink className={style.solutionCard} to="/detail/1">
               <p>
@@ -84,9 +84,9 @@ export default function Home() {
               UX/UI design
             </NavLink>
             <p className={style.textService}>
-              We guide every design detail for an exceptional experience: fusing
-              impeccable functionality with captivating aesthetics, for a user
-              journey that transcends the ordinary.
+              We guide every design to the detail for an exceptional experience:
+              fusing impeccable functionality with captivating esthetics, for a
+              user journey that transcends the ordinary.
             </p>
           </div>
         </div>
@@ -97,8 +97,9 @@ export default function Home() {
             </NavLink>
             <p className={style.textService}>
               We forge perfection into every line of code, fusing innovation and
-              functionality to create websites that not only captivate visually,
-              but also drive performance, scalability and ease of maintenance.
+              functionality to create websites that not only are visually
+              captivating, but also, but also drive performance, scalability and
+              ease of maintenance.
             </p>
           </div>
           <NavLink to="/detail/0">
@@ -141,18 +142,19 @@ export default function Home() {
         </div>
         <div className={style.contentCards}>
           <CardReview
-            textReview=" Molokaih has been a true partner for Smart Cap, collaborating in
-          the materialization of a truly differentiated digital platform
-          that has completely revolutionized our student experience."
+            textReview={`"Molokaih has been a true partner for Smart Cap, collaborating in
+            the materialization of a truly differentiated digital platform
+            that has completely revolutionized our student experience."`}
             imageProfile={DanelProfile}
             nameUser="Danel Manzanares"
             position="Founder of Smart Cap Academy"
             logo={logoSCA}
           />
           <CardReview
-            textReview=" We chose Molokaih because of their unmatched passion in our team.
-            Their focus goes beyond software development, they seek to truly
-            revolutionize our industry."
+            textReview={`
+              "We chose Molokaih because of their unmatched passion in our team.
+              Their focus goes beyond software development, they seek to truly
+              revolutionize our industry."`}
             imageProfile={SamulProfile}
             nameUser="Samuel Zdanovich"
             position="Founder of ZDA motors"

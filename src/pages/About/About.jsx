@@ -7,6 +7,9 @@ import CardProfile from "../../components/CardProfile/CardProfile";
 import AndreaProfile from "../../assets/teamProfiles/AndreaProfile.avif";
 import MarioProfile from "../../assets/teamProfiles/MarioProfile.avif";
 import BrianProfile from "../../assets/teamProfiles/BrianProfile.avif";
+import franciscoProfile from "../../assets/teamProfiles/franciscoProfile.avif";
+import montserratProfile from "../../assets/teamProfiles/montserratProfile.avif";
+import JulianProfile from "../../assets/teamProfiles/JulianProfile.avif";
 
 export default function About() {
   return (
@@ -33,49 +36,46 @@ export default function About() {
           <CardProfile
             name="Brian Niwoyda"
             imageProfile={BrianProfile}
+            urlLinkedin="https://www.linkedin.com/in/brianniwoyda"
             position="Chief Executive Officer"
-            description="EO & Fundador en Molokaih. Experto en software a medida y
+            description="CEO & Fundador en Molokaih. Experto en software y
           metodologías ágiles. Formador en Silicon Missions. Amplia
           experiencia en Account Management y Market Management. Master en
           Gestión de Proyectos Tecnológicos."
           />
           <CardProfile
-            name="
-            Mario Niwoyda
-            "
+            name="Mario Niwoyda"
+            urlLinkedin="https://www.linkedin.com/in/mario-germ%C3%A1n-niwoyda-89a435258"
             imageProfile={MarioProfile}
             position="Chief Financial Officer"
-            description="EO & Fundador en Molokaih. Experto en software a medida y
-          metodologías ágiles. Formador en Silicon Missions. Amplia
-          experiencia en Account Management y Market Management. Master en
-          Gestión de Proyectos Tecnológicos."
+            description="CFO & Co-Founder at Molokaih. Extensive experience as Branch Manager, focused on credit risk analysis and credit sales strategies at Coop Palmares. Bachelor's Degree in Business Administration and experience as Finance Director. Committed to driving Molokaih's financial growth."
           />
           <CardProfile
             name="Andrea Otero Bay"
+            urlLinkedin="https://www.linkedin.com/in/andreaoterobay"
             imageProfile={AndreaProfile}
             position="IT Recruitment Manager"
-            description="EO & Fundador en Molokaih. Experto en software a medida y
-          metodologías ágiles. Formador en Silicon Missions. Amplia
-          experiencia en Account Management y Market Management. Master en
-          Gestión de Proyectos Tecnológicos."
+            description="Experienced IT Recruiter with Silicon Missions expertise. Skilled in candidate sourcing, assessment, and interview coordination. Proficient in advanced head-hunting using Boolean operators. Builds strong client-candidate relationships for comprehensive recruitment services. Experienced in full selection process, from profiling to negotiation. Expertise in diverse IT roles. Trained in HR management and personnel administration."
           />
           <CardProfile
             name="Brian Niwoyda"
-            imageProfile={BrianProfile}
-            position="Chief Executive Officer"
-            description="EO & Fundador en Molokaih. Experto en software a medida y
-          metodologías ágiles. Formador en Silicon Missions. Amplia
-          experiencia en Account Management y Market Management. Master en
-          Gestión de Proyectos Tecnológicos."
+            imageProfile={franciscoProfile}
+            position="Financial analyst"
+            description="Financial analyst and risk manager, with experience in investment strategies and portfolio management."
           />
           <CardProfile
-            name="Brian Niwoyda"
-            imageProfile={BrianProfile}
-            position="Chief Executive Officer"
-            description="EO & Fundador en Molokaih. Experto en software a medida y
-          metodologías ágiles. Formador en Silicon Missions. Amplia
-          experiencia en Account Management y Market Management. Master en
-          Gestión de Proyectos Tecnológicos."
+            name="Montserrat Guadian"
+            imageProfile={montserratProfile}
+            urlLinkedin="https://www.linkedin.com/in/montserrat-sol%C3%B3rzano-guadian-271317152"
+            position="Accountant"
+            description="Accountant, with experience in accounting both in Mexico and Canada, where I work as a Bookkeeper."
+          />
+          <CardProfile
+            name="Julian Maiaru"
+            imageProfile={JulianProfile}
+            urlLinkedin="https://www.linkedin.com/in/julian-maiaru"
+            position="Head of Sales"
+            description="Head of Sales, with experience in leadership and management of sales teams in different contexts and geographies, including a previous position as Business & Technology Delivery Associate at Accenture and IBM."
           />
         </div>
       </section>

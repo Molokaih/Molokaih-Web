@@ -149,6 +149,7 @@
   justify-content: center;
   align-items: center;
   gap: 4vw;
+  background: linear-gradient(180deg, #fafafa 46.19%, #b6ffff 100%);
 }
 
 .contentTitleAndBorder {
@@ -214,6 +215,7 @@
   flex-direction: column;
   gap: 5vw;
   padding: 4vw 0;
+  background: #b6ffff;
 }
 
 .contentCards {
@@ -235,6 +237,7 @@
   align-items: center;
   padding: 10vh 0;
   gap: 5vw;
+  background: linear-gradient(180deg, #b6ffff 0%, #fafafa 100%);
 }
 
 .sectionText img {
