@@ -7,14 +7,6 @@
   position: absolute;
   top: 0;
   z-index: 100;
-  animation: slide-bottom 0.3s linear;
-}
-
-@keyframes slide-bottom {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
 }
 
 .logo {
@@ -37,15 +29,27 @@
   color: #222;
   text-decoration: none;
   font-size: clamp(16px, 1.2vw, 1.2vw);
+  transition: ease 0.2s;
+}
+
+.navigation a:hover {
+  transform: scale(1.05);
 }
 
 .buttonContact {
   color: #fff;
   text-decoration: none;
-  background-color: #25d9d9;
+  background-color: #222;
   padding: 0.7vw 1.2vw;
   border-radius: 50vw;
   font-size: clamp(16px, 1.2vw, 1.2vw);
+  box-shadow: 0px 10px 20px 0px rgba(102, 102, 102, 0.3);
+  transition: ease 0.2s;
+}
+
+.buttonContact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 0px rgba(102, 102, 102, 0.3);
 }
 
 .navegationMobile,

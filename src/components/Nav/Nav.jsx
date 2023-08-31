@@ -41,7 +41,6 @@ export default function Nav() {
         <List
           size="30"
           onClick={() => setMenu(true)}
-          // style={{ display: menu ? "none" : "flex" }}
           className={style.buttonMenu}
         />
       )}
@@ -51,19 +50,19 @@ export default function Nav() {
       >
         <div className={style.contentLinks}>
           <NavLink to="/about" className={style.linksMobile}>
-            About
+            About us
           </NavLink>
           <CaretRight className={style.logoNavegation} />
         </div>
         <div className={style.contentLinks}>
           <NavLink to="/wedo" className={style.linksMobile}>
-            Como lo hacemos
+            What we do
           </NavLink>
           <CaretRight className={style.logoNavegation} />
         </div>
         <div className={style.contentLinks}>
           <NavLink to="/contact" className={style.linksMobile}>
-            Contactanos
+            Contact us
           </NavLink>
           <CaretRight className={style.logoNavegation} />
         </div>

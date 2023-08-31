@@ -18,6 +18,7 @@ export default function CardProfile({
         <h3 className={style.name}>{name}</h3>
         <ArrowRight
           color="#25D9D9"
+          weight="bold"
           onClick={() => setViewDescription(true)}
           className={style.buttonDescription}
         />

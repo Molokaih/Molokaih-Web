@@ -134,14 +134,14 @@
   border: none;
   color: #fff;
   border-radius: 20vw;
-  background: #25d9d9;
+  background: #222;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   font-size: clamp(14px, 1vw, 1vw);
 }
 
 .form button:disabled {
-  background: #8ae6e6;
+  background: #888;
 }
 
 @media (max-width: 770px) {

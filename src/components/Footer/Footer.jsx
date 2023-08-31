@@ -41,7 +41,7 @@ export default function Footer() {
           <p>
             8 The Green STE B Dover, DE 19901
             <br />
-            +1 (647) 865-9825 <br />
+            +39 (320) 912 4943 <br />
             hello@molokaih.com
           </p>
         </div>

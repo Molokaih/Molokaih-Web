@@ -25,7 +25,7 @@
 }
 
 .contentPresentation h1 {
-  font-size: clamp(30px, 3vw, 3vw);
+  font-size: clamp(28px, 3vw, 3vw);
   width: 100%;
   font-weight: 500;
   flex-shrink: 0;
@@ -50,18 +50,19 @@
 
 .buttonContact {
   color: #fff;
-  background-color: #25d9d9;
+  background-color: #222;
   text-decoration: none;
   border-radius: 50vw;
   padding: 1.8vh 2vh;
   font-size: clamp(16px, 1.2vw, 1.2vw);
   position: relative;
-  transition: linear 0.3s;
+  transition: linear 0.2s;
+  box-shadow: 0px 10px 20px 0px rgba(102, 102, 102, 0.5);
 }
 
 .buttonContact:hover {
-  background-color: #25d9d9;
-  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 0px rgba(102, 102, 102, 0.3);
 }
 
 .buttonSolutions {
@@ -81,8 +82,8 @@
 }
 
 .solutionCard {
-  width: clamp(75px, 7vw, 7vw);
-  height: clamp(75px, 6vw, 6vw);
+  width: clamp(70px, 7vw, 7vw);
+  height: clamp(70px, 6vw, 6vw);
   padding: clamp(1rem, 1vw, 1vw);
   display: flex;
   flex-direction: column;
@@ -110,10 +111,6 @@
 .solutionCard:hover {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* .contentSolutions:hover > .solutionCard:not(:hover) {
-  filter: blur(2px);
-} */
 
 .background {
   width: 50%;
@@ -148,7 +145,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4vw;
+  gap: 10vh;
   background: linear-gradient(180deg, #fafafa 46.19%, #b6ffff 100%);
 }
 
@@ -189,6 +186,12 @@
   flex-shrink: 0;
   border-radius: 2vw;
   object-fit: cover;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.25);
+  transition: ease 0.2s;
+}
+
+.contentService img:hover {
+  transform: scale(1.05);
 }
 
 .titleService {
@@ -197,6 +200,18 @@
   font-size: clamp(18px, 1.8vw, 1.8vw);
   font-weight: 500;
   text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2vh;
+}
+
+.buttonDetail {
+  transition: ease 0.2s;
+}
+
+.titleService:hover .buttonDetail {
+  transform: translateX(5px);
 }
 
 .textService {
@@ -246,7 +261,7 @@
   flex-shrink: 0;
   border-radius: 2vw;
   object-fit: cover;
-  box-shadow: 15px 15px 50px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .contentText {
@@ -274,7 +289,7 @@
   font-weight: 300;
 }
 
-@media (max-height: 450px) {
+@media (max-height: 400px) {
   .hero {
     height: 130vh;
   }
@@ -287,9 +302,29 @@
 }
 
 @media (max-width: 600px) {
-  .background {
-    display: none;
+  .home {
+    background: transparent;
   }
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .backgroundLinear {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.77) 0%,
+      #fafafa 97.86%
+    );
+  }
+
   .contentPresentation {
     width: 100%;
     align-items: center;
@@ -309,6 +344,10 @@
   }
 
   /* ------------Solutions--------------- */
+
+  .sectionServices .contentTitleAndBorder {
+    margin-bottom: 0;
+  }
 
   .contentService {
     gap: 0;

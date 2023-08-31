@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./DetailService.module.css";
 import { useParams, NavLink } from "react-router-dom";
 import Nav from "../../components/Nav/Nav";
@@ -12,6 +12,7 @@ import {
 import web from "../../assets/serviceWeb.avif";
 import ux from "../../assets/servicesUXUI.avif";
 import mobile from "../../assets/serviceMobile.avif";
+import Footer from "../../components/Footer/Footer";
 
 export default function DetailService() {
   const { position } = useParams();
@@ -35,6 +36,11 @@ export default function DetailService() {
       image: mobile,
     },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <header className={style.detailService}>
       <Nav />
@@ -83,6 +89,7 @@ export default function DetailService() {
           <p>Boost in conversion and sales.</p>
         </div>
       </section>
+      <Footer />
     </header>
   );
 }

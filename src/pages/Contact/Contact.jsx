@@ -33,7 +33,7 @@ export default function Contact() {
       <Nav />
       <div className={style.sectionContact}>
         <div className={style.contentInfo}>
-          <h1>¡Contact us!</h1>
+          <h1>Contact us!</h1>
           <p className={style.subtitle}>
             Tell us about your next challenge. Let's find out how we can tackle
             it together.
@@ -66,7 +66,7 @@ export default function Contact() {
         </div>
         <form
           className={style.form}
-          action="https://formsubmit.co/correakevinfabian01@gmail.com"
+          action="https://formsubmit.co/hello@molokaih.com"
           method="POST"
         >
           <input

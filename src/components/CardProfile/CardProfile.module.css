@@ -33,6 +33,11 @@
   width: clamp(18px, 1.5vw, 1.5vw);
   height: clamp(18px, 1.5vw, 1.5vw);
   cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.buttonDescription:hover {
+  transform: translateX(3px);
 }
 
 .position {

@@ -16,17 +16,63 @@ import Footer from "../../components/Footer/Footer";
 import { NavLink } from "react-router-dom";
 import CardReview from "../../components/CardReview/CardReview";
 
+import { ArrowRight } from "phosphor-react";
+
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
     <main className={style.home}>
       <Nav />
       <main className={style.hero}>
         <section className={style.contentPresentation}>
-          <h1>Software development</h1>
-          <h2 className={style.subtitle}>
+          <motion.h1
+            initial={{
+              opacity: 0,
+              y: -20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.3,
+            }}
+          >
+            Software development
+          </motion.h1>
+          <motion.h2
+            initial={{
+              opacity: 0,
+              y: -20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 0.3,
+            }}
+            className={style.subtitle}
+          >
             Connect with our innovative solutions
-          </h2>
-          <div className={style.contentSolutions}>
+          </motion.h2>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: -20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 0.6,
+            }}
+            className={style.contentSolutions}
+          >
             <NavLink className={style.solutionCard} to="/detail/1">
               <p>
                 UX/UI <br /> design
@@ -44,15 +90,29 @@ export default function Home() {
                 className={style.logoCardSoluiton}
               />
             </NavLink>
-          </div>
-          <div className={style.buttons}>
+          </motion.div>
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: -20,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 0.9,
+            }}
+            className={style.buttons}
+          >
             <NavLink to="/contact" className={style.buttonContact}>
               Contact us
             </NavLink>
             <a href="#servicios" className={style.buttonSolutions}>
               Services
             </a>
-          </div>
+          </motion.div>
         </section>
         <div className={style.background}>
           <div className={style.backgroundLinear}></div>
@@ -79,21 +139,61 @@ export default function Home() {
           <NavLink to="/detail/1">
             <img src={servicesUXUI} alt="" />
           </NavLink>
-          <div className={style.contentTextService}>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: -30,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+              delay: 0.2,
+            }}
+            viewport={{ once: true }}
+            className={style.contentTextService}
+          >
             <NavLink to="/detail/1" className={style.titleService}>
               UX/UI design
+              <ArrowRight
+                color="#25D9D9"
+                className={style.buttonDetail}
+                weight="bold"
+              />
             </NavLink>
             <p className={style.textService}>
               We guide every design to the detail for an exceptional experience:
               fusing impeccable functionality with captivating esthetics, for a
               user journey that transcends the ordinary.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className={style.contentService}>
-          <div className={style.contentTextService}>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: -30,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+              delay: 0.2,
+            }}
+            viewport={{ once: true }}
+            className={style.contentTextService}
+          >
             <NavLink to="/detail/0" className={style.titleService}>
               Web development
+              <ArrowRight
+                color="#25D9D9"
+                className={style.buttonDetail}
+                weight="bold"
+              />
             </NavLink>
             <p className={style.textService}>
               We forge perfection into every line of code, fusing innovation and
@@ -101,7 +201,7 @@ export default function Home() {
               captivating, but also, but also drive performance, scalability and
               ease of maintenance.
             </p>
-          </div>
+          </motion.div>
           <NavLink to="/detail/0">
             <img src={serviceWeb} alt="" />
           </NavLink>
@@ -110,9 +210,29 @@ export default function Home() {
           <NavLink to="/detail/2">
             <img src={serviceMobile} alt="" />
           </NavLink>
-          <div className={style.contentTextService}>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: -30,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+              delay: 0.2,
+            }}
+            viewport={{ once: true }}
+            className={style.contentTextService}
+          >
             <NavLink to="/detail/2" className={style.titleService}>
               Mobile development
+              <ArrowRight
+                color="#25D9D9"
+                className={style.buttonDetail}
+                weight="bold"
+              />
             </NavLink>
             <p className={style.textService}>
               We build exceptional mobile experiences, where every pulse of code
@@ -120,7 +240,7 @@ export default function Home() {
               effortlessly and expand with agility, providing an unparalleled
               journey in the digital world.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className={style.sectionReviews}>
@@ -167,7 +287,22 @@ export default function Home() {
           src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
           alt=""
         />
-        <div className={style.contentText}>
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: -30,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.5,
+            delay: 0.2,
+          }}
+          viewport={{ once: true }}
+          className={style.contentText}
+        >
           <h2>
             Is your business maximizing all the opportunities that technology
             has to offer?
@@ -180,7 +315,7 @@ export default function Home() {
             solutions that address current challenges with a vision of the
             future, anticipating possible weaknesses to come.
           </p>
-        </div>
+        </motion.div>
       </section>
       <Footer />
     </main>
