@@ -154,8 +154,8 @@ export default function About() {
             In Molokaih, our vision is to expand our reach and establish strong
             relationships with customers, suppliers and businesses in the strong
             relationships with customers, suppliers and businesses in the United
-            States. United States. We have set out to be a strategic partner for
-            companies both in our region and in the U.S. market.
+            States. We have set out to be a strategic partner for companies both
+            in our region and in the U.S. market.
           </p>
         </div>
       </section>
