@@ -109,9 +109,6 @@ export default function Home() {
             <NavLink to="/contact" className={style.buttonContact}>
               Contact us
             </NavLink>
-            <a href="#servicios" className={style.buttonSolutions}>
-              Services
-            </a>
           </motion.div>
         </section>
         <div className={style.background}>

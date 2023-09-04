@@ -50,13 +50,13 @@ export default function DetailService() {
           <h1>{dataServices[position].title}</h1>
           <p>{dataServices[position].content}</p>
           <NavLink className={style.button} to="/contact">
-            Obtain
+            Meet at expert
           </NavLink>
         </div>
       </section>
       <section className={style.sectionBenefits}>
         <div className={style.contentTitleAndBorder}>
-          <h2 className={style.title}>Benefits</h2>
+          <h2 className={style.title}>Our Added value</h2>
           <svg
             className={style.borderTitle}
             viewBox="0 0 81 5"
@@ -78,15 +78,15 @@ export default function DetailService() {
             color="#25D9D9"
             className={style.logoBenefits}
           />
-          <p>Lower support costs.</p>
+          <p>Intelligent and flexible investment.</p>
         </div>
         <div className={style.benefit}>
           <Magnet color="#25D9D9" className={style.logoBenefits} />
-          <p>Increased customer retention.</p>
+          <p>High compliance with objectives.</p>
         </div>
         <div className={style.benefit}>
           <ChartLineUp color="#25D9D9" className={style.logoBenefits} />
-          <p>Boost in conversion and sales.</p>
+          <p>Permanent quality assistance.</p>
         </div>
       </section>
       <Footer />
