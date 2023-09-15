@@ -66,12 +66,12 @@ export default function WeDo() {
               }}
             >
               Through our integrated approach, we empower our clients to
-              actively engage in every facet of the development journey. This
+              actively engage in every step of the development journey. This
               collaborative methodology ensures that they not only witness but
               actively shape the evolution of their product, resulting in an
-              unparalleled and distinctive experience. We firmly believe that
-              involving our clients in the process is the key to crafting a
-              truly exceptional and tailored solution.
+              unparalleled and distinctive experience. We firmly believe
+              involving our clients is the key to crafting a truly exceptional
+              and tailored solution.
             </motion.p>
           </div>
           <img
