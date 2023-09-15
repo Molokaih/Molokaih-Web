@@ -195,8 +195,8 @@ export default function Home() {
             <p className={style.textService}>
               We forge perfection into every line of code, fusing innovation and
               functionality to create websites that not only are visually
-              captivating, but also, but also drive performance, scalability and
-              ease of maintenance.
+              captivating, but also drive performance, scalability and ease of
+              maintenance.
             </p>
           </motion.div>
           <NavLink to="/detail/0">
@@ -310,7 +310,8 @@ export default function Home() {
             than 5 years of practical experience in projects. Based on the
             principles of Design Thinking and Lean Startup, we generate
             solutions that address current challenges with a vision of the
-            future, anticipating possible weaknesses to come.
+            future, overcoming potential hurdles with well thought-out
+            solutions.
           </p>
         </motion.div>
       </section>

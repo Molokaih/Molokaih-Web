@@ -151,11 +151,10 @@ export default function About() {
             </svg>
           </div>
           <p>
-            In Molokaih, our vision is to expand our reach and establish strong
-            relationships with customers, suppliers and businesses in the strong
-            relationships with customers, suppliers and businesses in the United
-            States. We have set out to be a strategic partner for companies both
-            in our region and in the U.S. market.
+            At Molokaih, our vision is to expand our reach and establish strong
+            relationships with customers, suppliers and businesses. We have set
+            out to be a strategic technology partner for companies both in our
+            region and in the U.S. market.
           </p>
         </div>
       </section>

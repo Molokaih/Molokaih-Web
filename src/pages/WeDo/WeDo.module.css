@@ -13,9 +13,17 @@
   width: 100%;
   height: max-content;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 20vh 0 10vh 0;
+  gap: 15vh;
+}
+
+.contentInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 5vw;
 }
 
@@ -38,7 +46,11 @@
 }
 
 .contentText {
-  width: clamp(300px, 32vw, 32vw);
+  width: clamp(300px, 50vw, 50vw);
+}
+
+.contentText span {
+  color: #25d9d9;
 }
 
 .contentText p {
@@ -48,8 +60,8 @@
 }
 
 .sectionText img {
-  width: clamp(100px, 25vw, 25vw);
-  height: clamp(100px, 25vw, 25vw);
+  width: clamp(200px, 25vw, 25vw);
+  height: clamp(200px, 25vw, 25vw);
   object-fit: cover;
   border-radius: 2vw;
   box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.25);
@@ -112,7 +124,7 @@
 .logos {
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .sectionText img {
     display: none;
   }
