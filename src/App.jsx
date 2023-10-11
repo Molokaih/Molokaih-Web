@@ -4,6 +4,7 @@ import About from "./pages/About/About";
 import WeDo from "./pages/WeDo/WeDo";
 import DetailService from "./pages/DetailService/DetailService";
 import Contact from "./pages/Contact/Contact";
+import Services from "./pages/Services/Services";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/wedo" element={<WeDo />} />
       <Route path="/detail/:position" element={<DetailService />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/services" element={<Services />} />
     </Routes>
   );
 }
