@@ -58,6 +58,19 @@
   display: none;
 }
 
+.contentButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.selectLanguage {
+  width: clamp(40px, 2vw, 2vw);
+  height: auto;
+  cursor: pointer;
+}
+
 @media (max-width: 890px) {
   .nav {
     width: 100%;
@@ -67,7 +80,7 @@
     display: none;
   }
 
-  .buttonContact {
+  .contentButtons {
     display: none;
   }
 
@@ -111,14 +124,25 @@
     font-size: 20px;
   }
 
-  .networks {
+  .contentNetworks {
+    display: flex;
     position: absolute;
     bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+
+  .networks {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
-    width: 80%;
+    width: max-content;
+  }
+
+  .networks a {
+    height: 35px;
   }
 
   .logoNetwork {

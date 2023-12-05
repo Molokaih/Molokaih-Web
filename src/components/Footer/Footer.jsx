@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import style from "./Footer.module.css";
 import logoM from "../../assets/logoM.avif";
 import { InstagramLogo, LinkedinLogo, Bank } from "phosphor-react";
 import { NavLink } from "react-router-dom";
+import { LanguageContext } from "../../App";
 
 export default function Footer() {
+  const { language, setLanguage } = useContext(LanguageContext);
+
   return (
     <div className={style.footer}>
       <div className={style.contentTextLeft}>
@@ -22,21 +25,31 @@ export default function Footer() {
 
       <div className={style.contentTextRigth}>
         <div className={style.contentLinksWeb}>
-          <h3 className={style.titleSection}>Payment methods</h3>
+          <h3 className={style.titleSection}>
+            {language === "es" ? "Metodos de pago" : "Payment methods"}
+          </h3>
           <p>
             <Bank className={style.logobank} />
-            Bank transfer
+            {language === "es" ? "Transferencia bancaria" : "Bank transfer"}
           </p>
         </div>
         <div className={style.contentLinksWeb}>
-          <h3 className={style.titleSection}>Useful links</h3>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About us</NavLink>
-          <NavLink to="/wedo">What we do</NavLink>
+          <h3 className={style.titleSection}>
+            {language === "es" ? "Links utiles" : "Useful links"}
+          </h3>
+          <NavLink to="/">{language === "es" ? "Inicio" : "Home"}</NavLink>
+          <NavLink to="/about">
+            {language === "es" ? "Sobre nosotros" : "About us"}
+          </NavLink>
+          <NavLink to="/wedo">
+            {language === "es" ? "Como trabajamos" : "What we do"}
+          </NavLink>
         </div>
 
         <div>
-          <h3 className={style.titleSection}>Contact us</h3>
+          <h3 className={style.titleSection}>
+            {language === "es" ? "Contactanos" : "Contact us"}
+          </h3>
 
           <p>
             8 The Green STE B Dover, DE 19901

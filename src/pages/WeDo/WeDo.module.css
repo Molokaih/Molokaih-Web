@@ -121,12 +121,18 @@
   height: auto;
 }
 
-.logos {
-}
-
 @media (max-width: 700px) {
+  .contentInfo {
+    flex-direction: column;
+  }
+
+  .sectionText div:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
   .sectionText img {
-    display: none;
+    width: 80vw;
+    height: auto;
   }
   .title {
     width: 100%;

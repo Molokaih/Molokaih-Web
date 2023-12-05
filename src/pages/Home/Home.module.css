@@ -243,6 +243,25 @@
   height: max-content;
 }
 
+/* -------------Maps-------------- */
+
+.sectionMaps {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b6ffff;
+}
+
+.map {
+  width: clamp(200px, 80vw, 80vw);
+  height: auto;
+  object-fit: contain;
+  border-radius: 1vw;
+}
+
 /* -------------Texts-------------- */
 
 .sectionText {
@@ -264,29 +283,29 @@
   box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
-.contentText {
-  width: 45vw;
-  text-align: start;
-}
-
 .contentTitleAndBorderTextSection {
   display: flex;
   flex-direction: column;
   gap: 0;
-  margin-bottom: 25px;
 }
 
 .contentText h2 {
   color: #000;
   font-size: clamp(24px, 2vw, 2vw);
   font-weight: 500;
-  margin-bottom: 1vw;
 }
 
 .contentText {
   color: #296572;
   font-size: clamp(16px, 1.5vw, 1.5vw);
   font-weight: 300;
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: start;
+  gap: 2vh;
 }
 
 @media (max-height: 400px) {
@@ -345,16 +364,26 @@
 
   /* ------------Solutions--------------- */
 
+  .sectionServices {
+    flex-direction: column;
+  }
+
   .sectionServices .contentTitleAndBorder {
     margin-bottom: 0;
   }
 
   .contentService {
-    gap: 0;
+    gap: 2vh;
+    flex-direction: column-reverse;
   }
 
-  .contentService img {
-    display: none;
+  .sectionServices div:nth-child(3n) {
+    flex-direction: column;
+  }
+
+  .sectionServices img {
+    width: 80vw;
+    height: 40vh;
   }
 
   .textService {
@@ -368,8 +397,13 @@
 
   /* -------------Texts-------------- */
 
+  .sectionText {
+    flex-direction: column-reverse;
+  }
+
   .sectionText img {
-    display: none;
+    width: 80vw;
+    height: 40vh;
   }
 
   .contentText {

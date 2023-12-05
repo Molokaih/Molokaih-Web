@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import style from "./Contact.module.css";
 import {
   MapPin,
@@ -11,7 +11,12 @@ import Footer from "../../components/Footer/Footer";
 import Nav from "../../components/Nav/Nav";
 import useValidateForm from "../../hooks/useValidateForm";
 
+import { LanguageContext } from "../../App";
+import ButtonWhatsapp from "../../components/ButtonWhatsapp/ButtonWhatsapp";
+
 export default function Contact() {
+  const { language, setLanguage } = useContext(LanguageContext);
+
   const [dataEmail, setDataEamil] = useState({
     name: "",
     email: "",
@@ -31,12 +36,14 @@ export default function Contact() {
   return (
     <main className={style.contact}>
       <Nav />
+      <ButtonWhatsapp />
       <div className={style.sectionContact}>
         <div className={style.contentInfo}>
-          <h1>Contact us!</h1>
+          <h1>{language === "es" ? "¡Contactanos!" : "Contact us!"}</h1>
           <p className={style.subtitle}>
-            Tell us about your next challenge. Let's find out how we can tackle
-            it together.
+            {language === "es"
+              ? "Háblenos de su próximo reto. Averigüemos cómo podemos abordarlo juntos."
+              : " Tell us about your next challenge. Let's find out how we can tackle it together."}
           </p>
 
           <div className={style.contentText}>
@@ -72,7 +79,7 @@ export default function Contact() {
           <input
             type="text"
             name="name"
-            placeholder="Name"
+            placeholder={language === "es" ? "Nombre" : "Name"}
             value={dataEmail.name}
             onChange={(e) => changueData(e)}
             style={{
@@ -94,7 +101,7 @@ export default function Contact() {
           <input
             type="text"
             name="phone"
-            placeholder="Phone"
+            placeholder={language === "es" ? "Telefono" : "Phone"}
             value={dataEmail.phone}
             onChange={(e) => changueData(e)}
             style={{
@@ -105,7 +112,7 @@ export default function Contact() {
           <input
             type="text"
             name="_subject"
-            placeholder="Subject"
+            placeholder={language === "es" ? "Asunto" : "Subject"}
             value={dataEmail._subject}
             onChange={(e) => changueData(e)}
             style={{
@@ -117,7 +124,7 @@ export default function Contact() {
             id=""
             cols="30"
             rows="10"
-            placeholder="Mesage"
+            placeholder={language === "es" ? "Mensaje" : "Mesage"}
             name="mesage"
             value={dataEmail.mesage}
             onChange={(e) => changueData(e)}
@@ -133,7 +140,7 @@ export default function Contact() {
           />
           <input type="hidden" name="_captcha" value="false" />
           <button disabled={errors.exist} type="submit">
-            Send
+            {language === "es" ? "Enviar" : "Send"}
           </button>
         </form>
       </div>

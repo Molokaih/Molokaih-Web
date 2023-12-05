@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import style from "./WeDo.module.css";
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
@@ -12,13 +12,21 @@ import github from "../../assets/weDo/github.svg";
 import postgres from "../../assets/weDo/postgresql.svg";
 import imageWeDo from "../../assets/weDo/imageWeDo.avif";
 import imageWeDoPhone from "../../assets/weDo/imageWeDoPhone.avif";
+import imageWeDoEs from "../../assets/weDo/imageWeDoEs.avif";
+import imageWeDoPhoneEs from "../../assets/weDo/imageWeDoPhoneEs.avif";
 
 import { motion } from "framer-motion";
 
+import { LanguageContext } from "../../App";
+import ButtonWhatsapp from "../../components/ButtonWhatsapp/ButtonWhatsapp";
+
 export default function WeDo() {
+  const { language, setLanguage } = useContext(LanguageContext);
+
   return (
     <div className={style.weDo}>
       <Nav />
+      <ButtonWhatsapp />
       <section className={style.sectionText}>
         <div className={style.contentInfo}>
           <div className={style.contentText}>
@@ -36,7 +44,11 @@ export default function WeDo() {
               }}
               className={style.contentTitleAndBorder}
             >
-              <h2 className={style.title}>What makes us different</h2>
+              <h2 className={style.title}>
+                {language === "es"
+                  ? "Lo que nos diferencia"
+                  : "What makes us different"}
+              </h2>
               <svg
                 className={style.borderTitle}
                 width="81"
@@ -65,13 +77,9 @@ export default function WeDo() {
                 delay: 0.3,
               }}
             >
-              Through our integrated approach, we empower our clients to
-              actively engage in every step of the development journey. This
-              collaborative methodology ensures that they not only witness but
-              actively shape the evolution of their product, resulting in an
-              unparalleled and distinctive experience. We firmly believe
-              involving our clients is the key to crafting a truly exceptional
-              and tailored solution.
+              {language === "es"
+                ? "Gracias a nuestro enfoque integrado, capacitamos a nuestros clientes para que activamente en cada paso del proceso de desarrollo. Esta metodología de colaboración de metodología de colaboración garantiza que no sólo sean la evolución de su producto, lo que se traduce en una experiencia experiencia incomparable y distintiva. Creemos firmemente que que implicar a nuestros clientes es la clave para crear una solución excepcional y a medida."
+                : " Through our integrated approach, we empower our clients to actively engage in every step of the development journey. This collaborative methodology ensures that they not only witness but actively shape the evolution of their product, resulting in an unparalleled and distinctive experience. We firmly believe involving our clients is the key to crafting a truly exceptional and tailored solution."}
             </motion.p>
           </div>
           <img
@@ -99,7 +107,11 @@ export default function WeDo() {
               }}
               className={style.contentTitleAndBorder}
             >
-              <h2 className={style.title}>Methodologies with which we work</h2>
+              <h2 className={style.title}>
+                {language === "es"
+                  ? "Metodologías con las que trabajamos"
+                  : "Methodologies with which we work"}
+              </h2>
               <svg
                 className={style.borderTitle}
                 width="81"
@@ -128,35 +140,67 @@ export default function WeDo() {
                 delay: 0.3,
               }}
             >
-              Our <span>Lean </span>methodology focuses on eliminating waste and
-              optimizing processes for operational efficiency. It helps identify
-              growth opportunities and maintain agility in business.
-              <br />
-              <br />
-              <span>Design Thinking </span>
-              unlocks creativity through empathy and collaboration, guiding
-              innovation from idea generation to implementation, satisfying
-              customer needs.
-              <br />
-              <br />
-              <span>Scrum </span>
-              methodology promotes agile project management with collaboration
-              and incremental delivery, ensuring timely completion and
-              adaptability to changes.
+              {language === "es" ? (
+                <p>
+                  Nuestra metodología <span>Lean </span> se centra en eliminar y
+                  optimizar los procesos para lograr la eficiencia operativa.
+                  Ayuda a identificar oportunidades de crecimiento y mantener la
+                  agilidad negocio.
+                  <br />
+                  <br />
+                  <span>Pensamiento de diseño </span>
+                  creatividad a través de la empatía y la colaboración, guiando
+                  la la innovación desde la generación de ideas hasta su
+                  aplicación, satisfaciendo necesidades del cliente.
+                  <br />
+                  <br />
+                  <span>Scrum </span>
+                  promueve la gestión ágil de proyectos con colaboración y
+                  entrega incremental, garantizando la y adaptabilidad a los
+                  cambios.
+                </p>
+              ) : (
+                <p>
+                  Our <span>Lean </span>methodology focuses on eliminating waste
+                  and optimizing processes for operational efficiency. It helps
+                  identify growth opportunities and maintain agility in
+                  business.
+                  <br />
+                  <br />
+                  <span>Design Thinking </span>
+                  unlocks creativity through empathy and collaboration, guiding
+                  innovation from idea generation to implementation, satisfying
+                  customer needs.
+                  <br />
+                  <br />
+                  <span>Scrum </span>
+                  methodology promotes agile project management with
+                  collaboration and incremental delivery, ensuring timely
+                  completion and adaptability to changes.
+                </p>
+              )}
             </motion.p>
           </div>
         </div>
       </section>
       <section className={style.sectionMethodology}>
         {window.innerWidth <= 600 ? (
-          <img src={imageWeDoPhone} alt="image methodology" />
+          language === "es" ? (
+            <img src={imageWeDoPhoneEs} alt="image methodology" />
+          ) : (
+            <img src={imageWeDoPhone} alt="image methodology" />
+          )
+        ) : language === "es" ? (
+          <img src={imageWeDoEs} alt="image methodology" />
         ) : (
           <img src={imageWeDo} alt="image methodology" />
         )}
       </section>
       <section className={style.sectionTechnologies}>
         <div className={style.contentTechnologies}>
-          <p>User experience</p>
+          <p>
+            {language === "es" ? "Experiencia de usuario" : "User experience"}
+          </p>
           <img src={arrow} alt="" />
           <div className={style.contentLogos}>
             <img src={figma} alt="" className={style.logos} />
@@ -180,7 +224,7 @@ export default function WeDo() {
           </div>
         </div>
         <div className={style.contentTechnologies}>
-          <p>Data base</p>
+          <p>{language === "es" ? "Base de datos" : "Data base"}</p>
           <img src={arrow} alt="" />
           <div className={style.contentLogos}>
             <div></div>
@@ -188,7 +232,9 @@ export default function WeDo() {
           </div>
         </div>
         <div className={style.contentTechnologies}>
-          <p>Version control</p>
+          <p>
+            {language === "es" ? "Control de versiones" : "Version control"}
+          </p>
           <img src={arrow} alt="" />
           <div className={style.contentLogos}>
             <img src={github} alt="" className={style.logos} />
@@ -196,7 +242,7 @@ export default function WeDo() {
           </div>
         </div>
         <div className={style.contentTechnologies}>
-          <p>Mobile</p>
+          <p>{language === "es" ? "Móvil" : "Mobile"}</p>
           <img src={arrow} alt="" />
           <div className={style.contentLogos}>
             <div></div>
